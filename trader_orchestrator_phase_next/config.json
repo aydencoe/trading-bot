@@ -1,0 +1,91 @@
+{
+  "paper": true,
+  "api_timeout_sec": 15,
+  "interval_sec": 300,
+  "symbols_core": [
+    "SPY",
+    "QQQ",
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "IWM",
+    "XLF",
+    "XLK",
+    "XLE",
+    "AMD",
+    "META",
+    "GOOGL",
+    "TSLA"
+  ],
+  "symbols_universe": [
+    "SPY",
+    "QQQ",
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "IWM",
+    "XLF",
+    "XLK",
+    "XLE",
+    "AMD",
+    "META",
+    "GOOGL",
+    "TSLA",
+    "PLTR",
+    "UBER",
+    "SOFI",
+    "F",
+    "NIO",
+    "INTC",
+    "RIVN",
+    "CCL",
+    "AMC",
+    "GME",
+    "RIOT",
+    "MARA",
+    "PYPL",
+    "SNAP",
+    "BABA",
+    "T",
+    "BAC"
+  ],
+  "allocations": {
+    "balanced_trend": 0.5,
+    "smallcap_scalper": 0.3,
+    "aggr_momentum": 0.2
+  },
+  "risk": {
+    "equity_cap": 10000.0,
+    "max_daily_drawdown_pct": 3.0,
+    "per_trade_risk_frac": 0.02,
+    "cooldown_minutes": 15,
+    "skip_minutes_after_open": 45
+  },
+  "exposure_limits": {
+    "sector_max_positions": {
+      "tech": 2,
+      "finance": 2,
+      "energy": 2,
+      "broad": 3
+    }
+  },
+  "router": {
+    "prob_long_thresh": 0.45,
+    "prob_short_thresh": 0.45,
+    "partial_take_enable": true,
+    "partial_take_frac": 0.5,
+    "trailing_enable": true,
+    "trail_extra_tp_pct": 0.5
+  },
+  "tuner": {
+    "enable": true,
+    "window_trades": 50,
+    "step": 0.05,
+    "min_alloc": 0.1,
+    "max_alloc": 0.7
+  },
+  "watchlist": {
+    "smallcap_max_price": 10.0,
+    "smallcap_min_vol": 1000000
+  }
+}
